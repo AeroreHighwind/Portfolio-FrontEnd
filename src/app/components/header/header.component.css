@@ -35,3 +35,12 @@ header .container-xxl{
     left: -35px;
     top: -35px;
 }
+nav{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+nav .btn{
+    margin-left: 50px;
+}
+a{margin: 0px;}
