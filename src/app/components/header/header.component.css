@@ -1,0 +1,37 @@
+header .container-xxl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em;
+    background: url(src\assets\img\banner.png);
+    z-index: -1;
+}
+
+#banner-container{
+    position: relative;
+    background-image: url(src\assets\img\personalbanner.png);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-position: center;
+    width: 1200px;
+    height: 352px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    border-color: rgba(240, 240, 240, 0.5);
+    z-index: 1;
+}
+
+ #logo{
+    position: relative;
+    background-image: url(src\assets\img\logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 146px;
+    height: 43px;
+    padding: 5px;
+    z-index: 1;
+    left: -35px;
+    top: -35px;
+}
