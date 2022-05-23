@@ -1,12 +1,28 @@
 *{
     box-sizing: border-box;
+
 }
 
 body{
     margin: 0;
     font-family: sans-serif,lucida;
+    background-image: url(src\assets\img\wallpaper.jpg);
+    background-size: cover;
+    z-index: 0;
 }
+#section-container{
+    position: relative;
+    margin-top: 30px;
+    max-width: 920px;
+    
+    background-color: rgb(15, 15, 15);
+    color: rgba(255, 255, 255, 0.911);
+    
 
+    border-radius: 10px;
+    border-color: rgb(45, 255, 139);
+    border-style: inset;
+}
 h1{font-size: 2em;}
 h2{font-size: 1.2em;}
 p{font-size: 1em;}
