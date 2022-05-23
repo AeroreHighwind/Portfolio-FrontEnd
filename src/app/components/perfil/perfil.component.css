@@ -1,0 +1,29 @@
+#profile-container{
+    background: url(src\assets\img\personalBanner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    margin-top: 30px;
+    max-width: 920px;
+    
+    color: rgba(255, 255, 255, 0.911);
+    
+
+    border-radius: 50px;
+    border-color: rgb(45, 255, 139);
+    border-style: inset;
+}
+.profileimage-container{
+    position: relative;
+    height: 140px;
+    width: 140px;
+    background: url(src\assets\img\placeholderUser.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: auto;
+}
+img{
+    max-height: 35px;
+    margin-left: 10px;
+}

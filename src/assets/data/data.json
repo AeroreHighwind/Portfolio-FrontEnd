@@ -1,0 +1,17 @@
+{
+    "name" : "Gaston Gallegos",
+    "age" : "21",
+    "job" : "Estudiante UNC",
+    "location" : "Cordoba, Argentina",
+    "university" : {
+        "name" : "Universidad Nacional de Cordoba",
+        "logo" : "https://www.exactas.unlp.edu.ar/uploads/assets/logo_unc_small.jpg",
+        "department" :{
+            "name" : "Facultad de ciencias exactas,físicas y naturales",
+            "logo" : "https://srt-assets.tadevel.xyz/5de5800ed91dda4989147f3f/image.jpg"
+        } 
+        
+    },
+    "carreer": "Ingenieria en computación"
+}
+

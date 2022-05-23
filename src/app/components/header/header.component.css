@@ -7,7 +7,7 @@ header .container-xxl{
     z-index: -1;
 }
 
-#banner-container{
+/*#banner-container{
     background-image: url(src\assets\img\personalbanner.png);
     background-size: cover;
     background-repeat: no-repeat;    
@@ -20,7 +20,7 @@ header .container-xxl{
     border-color: rgba(240, 240, 240, 0.5);
     z-index: 1;
 }
-
+*/
  #logo{
     position: relative;
     background-image: url(src\assets\img\logo.png);

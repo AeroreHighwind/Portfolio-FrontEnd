@@ -6,10 +6,11 @@ import { Observable } from 'rxjs';
 })
 export class PortfolioService {
 
-  constructor(private clienteHttp: HttpClient) { }
-  obtenerDatos() :Observable<any>{
+  constructor(private http: HttpClient) { }
+
+  obtenerDatos() : Observable<any>{
   console.log("El servicio esta corriendo");
-  return this.clienteHttp.get('json');
+  return this.http.get('./assets/data/data.json');
 }
 
 }
