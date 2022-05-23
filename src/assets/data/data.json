@@ -19,9 +19,16 @@
         "unity" :{
             "type":"Curso",
             "name" : "Instituto de formacion tecnológica",
-            "topic": "Programacion de videojuegos en Unity Engine y C#",
+            "topic": "Programación oriantada a objetos en C#",
             "years": "2017/2019",
             "certificate": "Programacion de Videojuegos I (2017) y II (2019)"
+        },
+        "argprograma" :{
+            "type":"Curso",
+            "name" : "Instituto Nacional de Tecnología Industrial",
+            "topic": "Programación web full stack",
+            "years": "2021/2022",
+            "certificate": "Se programar (2021)"
         },
         "university": {
             "type":"Educacion Superior",
@@ -34,5 +41,27 @@
                 "years": "2019"
             }
         }
+        },
+    "experience":{
+        "project0" : {
+            "name": "Mi Portfolio",
+            "description": "Proyecto integrador de Argentina Programa #YoProgramo",
+            "resources": "Html,Css,JS,TS,Boostrap,Github,Firebase,Heroku,etc",
+            "startDate": "2021"
+            }
+         },
+    "skills":{
+        "html": "40",
+        "css": "30",
+        "js": "20",
+        "ts": "20",
+        "java":"40",
+        "c0":"30",
+        "c1":"35",
+        "sql": "50",
+        "boostrap":"30",
+        "git": "50",
+        "english": "70"
     }
-}
+
+    }

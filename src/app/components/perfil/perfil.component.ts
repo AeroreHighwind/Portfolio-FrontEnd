@@ -13,7 +13,6 @@ export class PerfilComponent implements OnInit {
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
       this.miPortfolio = data;
   });
   }
