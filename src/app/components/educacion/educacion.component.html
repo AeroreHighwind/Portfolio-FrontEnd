@@ -2,37 +2,24 @@
 
     <div class="container" id="section-container">
         <h1>Educación</h1>
-        <div class="container">
-            <ul class="institutions">
-                <li>
-                    <div>
-                        Educacion secundaria: Instituto Espiritu Santo<br>
-                        Titulo: Bachiller en Economia y Administracion de empresas(2018)<br>
-                    </div>
-                    <div class="institution-img"></div>
-                </li>
-                <li>
-                    <div>
-                        Curso de programacion de videojuegos: Instituto de Formación Tecnológica<br>
-                        Certificados: Programacion de videojuegos I(2017), Programacion de videojuegos II(2019)<br>
-                        Formacion: Unity Engine, C#.<br>
-                        <div class="institution-img"></div>
-                    </div>
 
-                </li>
-                <li>
-                    <div>Educacion superior:Universidad Nacional de Cordoba, Facultad de Ciencias Exactas,Fisicas y
-                        Naturales
-                        (ingreso 2019)<br>
-                        Carrera: Ingenieria en Computacion
-                    </div>
-                    <div class="institution-img">
-
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-
+        <ul class="institutions">
+            <li>{{miPortfolio.education.school.type}}: {{miPortfolio.education.school.name}}<br>
+                Titulo: {{miPortfolio.education.school.title}}<br>
+                Años: {{miPortfolio.education.school.years}}<br>
+                
+            </li>
+            <li>
+                {{miPortfolio.education.unity.type}}: {{miPortfolio.education.unity.name}}<br>
+                Certificado: {{miPortfolio.education.unity.certificate}}<br>
+                Años: {{miPortfolio.education.unity.years}}<br> 
+            </li>
+            <li>
+                {{miPortfolio.education.university.type}}: {{miPortfolio.education.university.name}}<br>
+                Facultad: {{miPortfolio.education.university.department.name}}<br>
+                Carrera: {{miPortfolio.education.university.department.career}}<br>
+                Año de ingreso: {{miPortfolio.education.university.department.years}}<br>
+            </li>
+        </ul>
     </div>
 </section>

@@ -4,12 +4,12 @@
         </div>
         <div class="container">
             <h1>{{miPortfolio.name}}</h1>
-            <p>{{miPortfolio.job}}<br>
-                {{miPortfolio.university.name}} <img [src]="miPortfolio.university.logo"> <br>
-                {{miPortfolio.university.department.name}} <img [src]="miPortfolio.university.department.logo"><br>
+            <ul>{{miPortfolio.job}}<br>
+                {{miPortfolio.education.university.name}} <img [src]="miPortfolio.education.university.logo"> <br>
+                {{miPortfolio.education.university.department.name}} <img [src]="miPortfolio.education.university.department.logo"><br>
                 {{miPortfolio.location.name}} <img [src]="miPortfolio.location.flag"><br>
 
-            </p>
+            </ul>
         </div>
     </div>
 </section>

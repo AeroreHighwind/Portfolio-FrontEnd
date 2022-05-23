@@ -14,6 +14,7 @@ import { Page404Component } from './components/page404/page404.component';
 import { LoginComponent } from './components/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { HomeComponent } from './components/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     FooterComponent,
     Page404Component,
     LoginComponent,
-    PerfilComponent
+    PerfilComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
