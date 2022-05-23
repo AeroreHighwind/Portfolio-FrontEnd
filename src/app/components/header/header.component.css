@@ -8,12 +8,10 @@ header .container-xxl{
 }
 
 #banner-container{
-    position: relative;
     background-image: url(src\assets\img\personalbanner.png);
     background-size: cover;
     background-repeat: no-repeat;    
     background-position: center;
-    width: 1200px;
     height: 352px;
     margin-top: 10px;
     margin-bottom: 10px;
