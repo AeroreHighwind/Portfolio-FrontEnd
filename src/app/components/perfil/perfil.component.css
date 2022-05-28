@@ -1,4 +1,5 @@
 #profile-container{
+    
     background: url(src\assets\img\personalBanner.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,7 +19,7 @@
     position: relative;
     height: 140px;
     width: 140px;
-    background: url(src\assets\img\placeholderUser.png) no-repeat;
+    background: url(src\assets\img\SSUser.png) no-repeat;
     background-size: cover;
     background-position: center;
     min-height: auto;

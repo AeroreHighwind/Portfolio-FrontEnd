@@ -1,7 +1,11 @@
-*{
-    box-sizing: border-box;
+*{box-sizing: border-box;}
+h1{font-size: 2em;}
+h2{font-size: 1.2em;}
+p{font-size: 1em;}
 
-}
+ul{list-style: circle;}
+
+i{color: rgb(45, 255, 139);}
 
 body{
     margin: 0;
@@ -22,14 +26,6 @@ body{
     border-radius: 10px;
     border-color: rgb(45, 255, 139);
     border-style: inset;
-}
-h1{font-size: 2em;}
-h2{font-size: 1.2em;}
-p{font-size: 1em;}
-ul{list-style: circle;}
-
-i{
-    color: rgb(45, 255, 139);
 }
 /* Boostrap color override*/
 .btn.btn-primary {
