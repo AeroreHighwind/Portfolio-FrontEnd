@@ -1,0 +1,12 @@
+#login-container{
+
+background: radial-gradient(circle, rgb(41, 41, 41) 85%, rgb(53, 53, 53) 100%);
+color: rgb(2, 250, 113);
+max-width: 640px;
+border-radius: 20px;
+border-color: #02fa71;
+border-style: inset;
+}
+
+
+

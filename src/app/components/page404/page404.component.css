@@ -1,5 +1,13 @@
-*{
+section{
     background-image: url(src\assets\img\page404.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+}
+#page404-container{
+    position: relative;
+    color: rgba(255, 255, 255, 0.911);
+    font-weight: bolder;
+
 }

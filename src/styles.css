@@ -1,19 +1,49 @@
-*{
-    box-sizing: border-box;
-}
+*{box-sizing: border-box;}
+h1{font-size: 2em;}
+h2{font-size: 1.2em;}
+p{font-size: 1em;}
+
+ul{list-style: circle;}
+
+i{color: rgb(45, 255, 139);}
 
 body{
     margin: 0;
     font-family: sans-serif,lucida;
+    background-image: url(src\assets\img\wallpaper.jpg);
+    background-size: cover;
+    z-index: 0;
 }
+#section-container{
+    position: relative;
+    margin-top: 30px;
+    max-width: 920px;
+    
+    background-color: rgb(15, 15, 15);
+    color: rgba(255, 255, 255, 0.911);
+    
 
-h1{font-size: 2em;}
-h2{font-size: 1.2em;}
-p{font-size: 1em;}
-ul{list-style: none;}
-
-
-
+    border-radius: 10px;
+    border-color: rgb(45, 255, 139);
+    border-style: inset;
+}
+/* Boostrap color override*/
+.btn.btn-primary {
+    background: #02fa71 !important;
+    border: 1px solid #02fa71 !important;
+    color: #fff !important; }
+    .btn.btn-primary:hover {
+      border: 1px solid #02fa71;
+      background: transparent;
+      color: #02fa71; }
+    .btn.btn-primary.btn-outline-primary {
+      border: 1px solid #02fa71;
+      background: transparent;
+      color: #02fa71; }
+      .btn.btn-primary.btn-outline-primary:hover {
+        border: 1px solid transparent;
+        background: #02fa71;
+        color: #fff; }
 
 @media (max-width: 700px) {
     header .container-xxl{
