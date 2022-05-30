@@ -1,0 +1,13 @@
+.container{
+    position: relative;
+    margin-top: 30px;
+    max-width: 920px;
+    
+    background-color: rgba(15, 15, 15, 0.884);
+    color: rgba(255, 255, 255, 0.911);
+    
+
+    border-radius: 10px;
+    border-color: rgb(45, 255, 139);
+    border-style: inset;
+}
