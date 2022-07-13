@@ -1,5 +1,4 @@
-#login-container{
-
+#form-container{
 background: radial-gradient(circle, rgb(41, 41, 41) 85%, rgb(53, 53, 53) 100%);
 color: rgb(2, 250, 113);
 max-width: 640px;
@@ -8,5 +7,13 @@ border-color: #02fa71;
 border-style: inset;
 }
 
-
+button{
+    margin-top: 20px;
+}
+form{
+    margin-top: 50px;
+    margin: 0 auto;
+    width: 20em;
+    padding: 20px;
+}
 

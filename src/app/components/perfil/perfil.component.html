@@ -1,14 +1,18 @@
 <section>
     <div class="container" id="profile-container">
-        <i class="fa-solid fa-circle-check"></i>  <i class="fa-solid fa-circle-xmark"></i> <i class="fa-solid fa-square-pen"></i>
+        <button class="modbtn"><i class="fa-solid fa-circle-check"></i></button> 
+        <button class="modbtn"><i class="fa-solid fa-circle-xmark"></i> </button>
+        <button class="modbtn"><i class="fa-solid fa-square-pen" ></i></button>
+        
         <div class="profileimage-container">
+            <img src="..\..\assets\img\SSUser.png" alt="profile" class="profileimage">
         </div>
+
         <div class="container">
-            <h1>{{miPortfolio.name}}</h1>
-            <ul>{{miPortfolio.job}}<br>
-                {{miPortfolio.education.university.name}} <img [src]="miPortfolio.education.university.logo"> <br>
-                {{miPortfolio.education.university.department.name}} <img [src]="miPortfolio.education.university.department.logo"><br>
-                {{miPortfolio.location.name}} <img [src]="miPortfolio.location.flag"><br>
+            <h1>{{miPortfolio.profileinfo.name}}</h1>
+            <ul>{{miPortfolio.profileinfo.job}}<br>
+                {{miPortfolio.education.university.name}} <img [src]="miPortfolio.education.university.logo" class="otherlogos"><img [src]="miPortfolio.education.university.logo2" class="otherlogos"> <br>
+                {{miPortfolio.profileinfo.location.name}} <img [src]="miPortfolio.profileinfo.location.flag" class="otherlogos"><br>
 
             </ul>
         </div>

@@ -19,12 +19,16 @@
     position: relative;
     height: 140px;
     width: 140px;
-    background: url(src\assets\img\SSUser.png) no-repeat;
+    background: url(src\assets\img\placeholderUser.png) no-repeat;
     background-size: cover;
     background-position: center;
     min-height: auto;
 }
-img{
+.profileimage{
+    max-width: 140px;
+    max-height: 140px;
+}
+.otherlogos{
     max-height: 35px;
     margin-left: 10px;
 }

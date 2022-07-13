@@ -10,7 +10,8 @@ export class PortfolioService {
 
   obtenerDatos() : Observable<any>{
   console.log("El servicio esta corriendo");
-  return this.http.get('./assets/data/data.json');
+  return this.http.get('./assets/data/optimized_data.json');
 }
 
 }
+
