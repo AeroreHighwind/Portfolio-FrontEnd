@@ -16,6 +16,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,17 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgCircleProgressModule.forRoot({
+      radius: 50,
+      outerStrokeWidth: 7,
+      innerStrokeWidth: 3,
+      showImage: true,
+      outerStrokeColor: "#00ff6e",
+      innerStrokeColor: "#242424",
+      animationDuration: 300,
+    })
+
   ],
   providers: [],
   bootstrap: [AppComponent]
