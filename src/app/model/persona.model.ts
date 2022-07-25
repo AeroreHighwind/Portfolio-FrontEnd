@@ -9,7 +9,7 @@ export class persona{
     constructor(nombre:String, apellido:String, img:String, about:String){
         this.nombre = "nombre";
         this.apellido = "apellido";
-        this.img = "asdasdasdds.com";
+        this.img = "img";
         this.about = "about";
     }
 
