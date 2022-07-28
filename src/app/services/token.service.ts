@@ -23,12 +23,12 @@ public getToken(): string {
   return sessionStorage.getItem(TOKEN_KEY)!;
 }
 
-public setUsername(username: string): void {
+public setUserName(username: string): void {
   window.sessionStorage.removeItem(USERNAME_KEY);
   window.sessionStorage.setItem(USERNAME_KEY, username);
 }
 
-public getUsername(): string {
+public getUserName(): string {
   return sessionStorage.getItem(USERNAME_KEY)!;
 }
 
