@@ -15,7 +15,7 @@ import { LoginComponent } from './components/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { HomeComponent } from './components/home/home.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 @NgModule({
   declarations: [
@@ -34,9 +34,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
     NgCircleProgressModule.forRoot({
       radius: 50,
       outerStrokeWidth: 7,

@@ -1,36 +1,45 @@
-<section>
-    <div class="container" id="form-container">
-<form [formGroup]="form">
-    <div class="form-group">
-      <label for="exampleInputEmail1">Correo electrónico </label>
-      <input type="email" formControlName="email" 
-      [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': Email?.valid}"
-      class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
-    </div>
-    <div *ngIf="Email?.errors && Email?.touched">
-        <p *ngIf="Email?.hasError('required')" class="text-danger">
-            El correo electrónico es requerido
-        </p>
-        <p *ngIf="Email?.hasError('email')" class="text-danger">
-            El correo electrónico no es válido
-        </p>
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+
+
+
+<body>
+    <div class="login-dark">
+
+        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+            
+            <div class="form-group">
+                <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control" placeholder="Usuario" [(ngModel)] = "nombreUsuario" required>
+            </div>
+
+
+            <div class="form-group">
+                <input type="password" id="password" name="password" class="form-control"  placeholder="Password" [(ngModel)] = "password" required>
+            </div>
+            
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
+        </form>
     </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Contraseña</label>
-      <input type="password" formControlName="password" 
-      [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': Password?.valid}"
-      class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-    </div>
-    <div *ngIf="Password?.errors && Password?.touched">
-        <p *ngIf="Password?.hasError('required')" class="text-danger">
-            Ingrese la contraseña.
-        </p>
-        <p *ngIf="Password?.errors?.minlength" class="text-danger">
-            La contraseña debe ser de al menos 8 caracteres.
-        </p>
-    </div>
-    <button type="submit" class="btn btn-primary">Ingresar</button>
-  </form>
-</div>
-</section>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
