@@ -17,6 +17,8 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { interceptorProvider } from './services/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     Page404Component,
     LoginComponent,
     PerfilComponent,
-    HomeComponent
+    HomeComponent,
+    NewExperienciaComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     })
 
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

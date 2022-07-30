@@ -1,16 +1,19 @@
 <section class="userExperience">
     <div class="container" id="section-container">
         <h1>Experiencia</h1>
-        <button class="modbtn"><i class="fa-solid fa-circle-check"></i></button> 
-        <button class="modbtn"><i class="fa-solid fa-circle-xmark"></i> </button>
-        <button class="modbtn"><i class="fa-solid fa-square-pen" ></i></button>
-        <ul class="projects">
-            <li>
-                Nombre del proyecto: {{miPortfolio.experience.project0.name}}<br>
-                Descripción: {{miPortfolio.experience.project0.description}}<br>
-                Conocimientos utilizados: {{miPortfolio.experience.project0.resources}}<br>
-                Fecha de inicio: {{miPortfolio.experience.project0.startDate}}<br>
-            </li>
-        </ul>
+        <button type="button" class="btn btn-primary" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva experiencia laboral
+        </button>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of exp">
+                    <td>{{Experiencia.nombreE}}</td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td>EDITAR</td>
+                    <td>ELIMINAR</td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
 </section>

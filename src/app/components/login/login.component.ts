@@ -32,24 +32,23 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  onLogin(): void {
-    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
-    this.authService.login(this.loginUsuario).subscribe(
-      (data: any) => {
-        this.tokenService.setToken(data.token);
-        this.tokenService.setAuthorities(data.authorities);
+  onLogin(): void{
+    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
+    this.authService.login(this.loginUsuario).subscribe(data =>{
         this.isLogged = true;
         this.isLoggingFail = false;
-        this.roles = this.tokenService.getAuthorities();
-        this.router.navigate(['/']);
-      }
-      , (error: any) => {
+        this.tokenService.setToken(data.token);
+        this.tokenService.setUserName(data.nombreUsuario);
+        this.tokenService.setAuthorities(data.authorities);
+        this.roles = data.authorities;
+        this.router.navigate([''])
+      }, err =>{
         this.isLogged = false;
         this.isLoggingFail = true;
-        this.errMsj = error.error.message;
+        this.errMsj = err.error.mensaje;
         console.log(this.errMsj);
-      }
-    );
+        
+      })
   }
 
 
