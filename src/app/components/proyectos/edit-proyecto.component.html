@@ -1,0 +1,20 @@
+<div class="container-sm" *ngIf="proyecto" id="proform-container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombrePro">Nombrel del proyecto</label>
+                    <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="proyecto.nombrePro" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionPro">Descripcion del proyecto realizado</label>
+                    <input type="text" class="form-control" id="descripcionPro" name="descripcionPro" [(ngModel)]="proyecto.descripcionPro" required>
+                </div>
+                <button class="btn btn-primary">
+                    Modificar proyecto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,12 @@
+#proform-container{
+    color: rgb(45, 255, 139);
+    max-width: 500px;
+    background: rgba(10, 10, 10, 0.4);
+    border-radius: 8px;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+button{
+    margin-top: 20px;
+    
+}
