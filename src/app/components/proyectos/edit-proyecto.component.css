@@ -1,5 +1,5 @@
 #proform-container{
-    color: rgb(45, 255, 139);
+    color: rgb(255, 0, 55);
     max-width: 500px;
     background: rgba(10, 10, 10, 0.4);
     border-radius: 8px;
@@ -10,3 +10,14 @@ button{
     margin-top: 20px;
     
 }
+.btn.btn-primary {
+    background: #fa0238 !important;
+    border: 1px solid #fa0238 !important;
+    color: #fff !important;
+ }
+    .btn.btn-primary:hover {
+      border: 1px solid #91001f;
+      background: transparent;
+      color: #91001f; 
+    }
+    
