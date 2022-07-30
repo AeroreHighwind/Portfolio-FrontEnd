@@ -1,18 +1,14 @@
 <section>
     <div class="container" id="profile-container">
-        <button class="modbtn"><i class="fa-solid fa-circle-check"></i></button> 
-        <button class="modbtn"><i class="fa-solid fa-circle-xmark"></i> </button>
-        <button class="modbtn"><i class="fa-solid fa-square-pen" ></i></button>
-        
         <div class="profileimage-container">
-            <img src="..\..\assets\img\GGallegos-profile.png" alt="profile" class="profileimage">
+            <img src= {{persona.img}} alt="profile" class="profileimage">
         </div>
 
         <div class="container">
-            <h1>{{miPortfolio.profileinfo.name}}</h1>
-            <ul>{{miPortfolio.profileinfo.job}}<br>
-                {{miPortfolio.education.university.name}} <img [src]="miPortfolio.education.university.logo" class="otherlogos"><img [src]="miPortfolio.education.university.logo2" class="otherlogos"> <br>
-                {{miPortfolio.profileinfo.location.name}} <img [src]="miPortfolio.profileinfo.location.flag" class="otherlogos"><br>
+            <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+            <ul>{{persona.job}}<br>
+                {{persona.mainEdu}} <img [src]="miPortfolio.education.university.logo" class="otherlogos"><img [src]="miPortfolio.education.university.logo2" class="otherlogos"> <br>
+                {{persona.location}} <img [src]="miPortfolio.profileinfo.location.flag" class="otherlogos"><br>
 
             </ul>
         </div>
