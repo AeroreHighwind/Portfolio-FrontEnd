@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { interceptorProvider } from './services/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
     LoginComponent,
     PerfilComponent,
     HomeComponent,
-    NewExperienciaComponent
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,

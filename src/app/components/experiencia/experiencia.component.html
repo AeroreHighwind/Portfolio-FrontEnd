@@ -7,10 +7,15 @@
         <table class="table">
             <tbody>
                 <tr *ngFor="let Experiencia of exp">
-                    <td>{{Experiencia.nombreE}}</td>
+                    <td>
+                        <h2>{{Experiencia.nombreE}}</h2>
+                    </td>
                     <td>{{Experiencia.descripcionE}}</td>
-                    <td>EDITAR</td>
-                    <td>ELIMINAR</td>
+                    <td *ngIf="isLogged"><button class="modbtn" routerLink="/update/{{Experiencia.id}}">Editar<i
+                                class="fa-solid fa-square-pen"></i></button></td>
+
+                    <td *ngIf="isLogged"><button class="modbtn" (click)="delete(Experiencia.id)">Eliminar<i
+                                 class="fa-solid fa-circle-xmark"></i></button></td>
                 </tr>
             </tbody>
         </table>
