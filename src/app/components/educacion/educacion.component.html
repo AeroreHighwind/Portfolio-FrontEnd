@@ -1,11 +1,24 @@
 <section class="userEducation">
-
     <div class="container" id="section-container">
         <h1>Educación</h1>
-        <button class="modbtn"><i class="fa-solid fa-circle-check" id="btn-content"></i></button> 
-        <button class="modbtn"><i class="fa-solid fa-circle-xmark"></i> </button>
-        <button class="modbtn"><i class="fa-solid fa-square-pen" ></i></button>
-        <ul class="institutions">
-        </ul>
+        <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar educación
+        </button>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2>{{Educacion.nombreEdu}}</h2>
+                    </td>
+                    <td>{{Educacion.descripcionEdu}}</td>
+                    <td *ngIf="isLogged"><button class="modbtn" routerLink="/updateedu/{{Educacion.id}}">Editar<i
+                                class="fa-solid fa-square-pen"></i></button></td>
+
+                    <td *ngIf="isLogged"><button class="modbtn" (click)="delete(Educacion.id)">Eliminar<i
+                                 class="fa-solid fa-circle-xmark"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
 </section>

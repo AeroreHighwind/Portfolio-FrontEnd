@@ -11,7 +11,7 @@
                         <h2>{{Experiencia.nombreE}}</h2>
                     </td>
                     <td>{{Experiencia.descripcionE}}</td>
-                    <td *ngIf="isLogged"><button class="modbtn" routerLink="/update/{{Experiencia.id}}">Editar<i
+                    <td *ngIf="isLogged"><button class="modbtn" routerLink="/updateexp/{{Experiencia.id}}">Editar<i
                                 class="fa-solid fa-square-pen"></i></button></td>
 
                     <td *ngIf="isLogged"><button class="modbtn" (click)="delete(Experiencia.id)">Eliminar<i

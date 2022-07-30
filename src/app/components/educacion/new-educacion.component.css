@@ -1,5 +1,5 @@
-#expform-container{
-    color: rgb(45, 255, 139);
+#eduform-container{
+    color: rgb(59, 45, 255);
     max-width: 500px;
     background: rgba(10, 10, 10, 0.4);
     border-radius: 8px;
@@ -7,6 +7,7 @@
     padding-bottom: 50px;
 }
 button{
+    
     margin-top: 20px;
     
 }
