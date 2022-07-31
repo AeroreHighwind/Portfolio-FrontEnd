@@ -7,6 +7,11 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
+import { NewHabilidadComponent } from './components/habilidades/new-habilidad.component';
+import { EditHabilidadComponent } from './components/habilidades/edit-habilidad.component';
+import { EditPerfilComponent } from './components/perfil/edit-perfil.component';
 
 const routes: Routes = [
   { path: '' , redirectTo: '/home', pathMatch: 'full'},
@@ -16,6 +21,11 @@ const routes: Routes = [
   { path: 'updateexp/:id', component: EditExperienciaComponent},
   { path: 'nuevaedu', component: NewEducacionComponent},
   { path: 'updateedu/:id', component: EditEducacionComponent},
+  { path: 'nuevopro', component: NewProyectoComponent},
+  { path: 'updatepro/:id', component: EditProyectoComponent},
+  { path: 'nuevahab', component: NewHabilidadComponent},
+  { path: 'updatehab/:id', component: EditHabilidadComponent},
+  { path: 'updateper/:id', component: EditPerfilComponent},
   { path: '**', component: Page404Component}
 
 ];
