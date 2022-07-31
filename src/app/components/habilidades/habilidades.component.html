@@ -7,28 +7,10 @@
 
         <h2>Hard-Skills</h2>
         <ul class="hard-skills">
-            <li>
-                <circle-progress class="html"
-                [percent]="90" 
+            <li *ngFor="let Habilidad of habilidades">
+                <circle-progress *ngIf="Habilidad.hard"
+                [percent]=Habilidad.porcentaje
                 [imageSrc]="'assets/img/html_logo.png'"
-                [showImage]="true"
-                [imageWidth]="50"
-                [imageHeight]="50"
-              ></circle-progress>
-            </li>
-            <li>
-                <circle-progress class="css"
-                [percent]="75" 
-                [imageSrc]="'assets/img/css_logo.png'"
-                [showImage]="true"
-                [imageWidth]="50"
-                [imageHeight]="50"
-              ></circle-progress>
-            </li>
-            <li>
-                <circle-progress class="java"
-                [percent]="85" 
-                [imageSrc]="'assets/img/js_logo.png'"
                 [showImage]="true"
                 [imageWidth]="50"
                 [imageHeight]="50"
@@ -38,8 +20,8 @@
 
         <h2>Soft-Skills</h2>
 <ul class="soft-skills">
-    <li>
-        <circle-progress class="comunicacion"
+  <li *ngFor="let Habilidad of habilidades">
+        <circle-progress class="comunicacion" *ngIf="!Habilidad.hard"
         [percent]="90" 
         [imageSrc]="'assets/img/comunication_logo.png'"
         [showImage]="true"
