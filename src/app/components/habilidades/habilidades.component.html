@@ -11,8 +11,8 @@
               
               <div class="circle-container" *ngIf="Habilidad.hard">
                 <div class="button-container" *ngIf="isLogged"> 
-                  <button class="modbtn" >Editar<i class="fa-solid fa-square-pen"></i></button>
-                  <button class="modbtn" >Eliminar<i class="fa-solid fa-circle-xmark"></i></button>
+                  <button class="modbtn" routerLink="/updatehab/{{Habilidad.id}}" >Editar <i class="fa-solid fa-square-pen"></i></button>
+                  <button class="modbtn" (click)="delete(Habilidad.id)">Eliminar<i class="fa-solid fa-circle-xmark"></i></button>
                 </div>
               <circle-progress 
                 [percent]=Habilidad.porcentaje
@@ -31,8 +31,8 @@
               
     <div class="circle-container" *ngIf="!Habilidad.hard">
       <div class="button-container" *ngIf="isLogged"> 
-        <button class="modbtn" >Editar<i class="fa-solid fa-square-pen"></i></button>
-        <button class="modbtn" >Eliminar<i class="fa-solid fa-circle-xmark"></i></button>
+        <button class="modbtn" routerLink="/updatehab/{{Habilidad.id}}" >Editar <i class="fa-solid fa-square-pen"></i></button>
+        <button class="modbtn" (click)="delete(Habilidad.id)">Eliminar<i class="fa-solid fa-circle-xmark"></i></button>
       </div>
     <circle-progress 
       [percent]=Habilidad.porcentaje
