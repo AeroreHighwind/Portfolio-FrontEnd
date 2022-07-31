@@ -8,15 +8,15 @@
                 </div>
                 <div class="form-group">
                     <label for="descripcionEdu">Porcentaje de habilidad</label>
-                    <input type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
-                </div>
-                <div class="form-group">
-                    <label for="hard">Habilidad dura?</label>
-                    <input type="checkbox" id="hard" name="hard" [(ngModel)]="hard" required [checked]="true">
+                    <input type="range" min="0" max="100" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
                 </div>
                 <div class="form-group">
                     <label for="hard">URL Imagen</label>
                     <input type="text" class="form-control" id="imgURL" name="imgURL" [(ngModel)]="imgURL" required>
+                </div>
+                <div class="form-group">
+                    <label for="hard">Habilidad dura?</label>
+                    <input type="checkbox" id="hard" name="hard" [(ngModel)]="hard" required [checked]="true">
                 </div>
                 <button class="btn btn-primary">
                     Agregar habilidad
