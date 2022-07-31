@@ -1,63 +1,48 @@
 <section class="userSkills">
     <div class="container" id="section-container">
-        <button class="modbtn"><i class="fa-solid fa-circle-check"></i></button> 
-        <button class="modbtn"><i class="fa-solid fa-circle-xmark"></i> </button>
-        <button class="modbtn"><i class="fa-solid fa-square-pen" ></i></button>
-        <h1>Habilidades</h1>
 
+        <h1>Habilidades</h1>
+            <button type="button" class="btn btn-primary" routerLink="/nuevahab" *ngIf="isLogged">
+                Agregar habilidad
+            </button>
         <h2>Hard-Skills</h2>
         <ul class="hard-skills">
             <li *ngFor="let Habilidad of habilidades">
-                <circle-progress *ngIf="Habilidad.hard"
+              
+              <div class="circle-container" *ngIf="Habilidad.hard">
+                <div class="button-container" *ngIf="isLogged"> 
+                  <button class="modbtn" >Editar<i class="fa-solid fa-square-pen"></i></button>
+                  <button class="modbtn" >Eliminar<i class="fa-solid fa-circle-xmark"></i></button>
+                </div>
+              <circle-progress 
                 [percent]=Habilidad.porcentaje
-                [imageSrc]="'assets/img/html_logo.png'"
+                [imageSrc]="Habilidad.imgURL"
                 [showImage]="true"
                 [imageWidth]="50"
                 [imageHeight]="50"
               ></circle-progress>
+              </div>    
             </li>
         </ul>
 
         <h2>Soft-Skills</h2>
 <ul class="soft-skills">
   <li *ngFor="let Habilidad of habilidades">
-        <circle-progress class="comunicacion" *ngIf="!Habilidad.hard"
-        [percent]="90" 
-        [imageSrc]="'assets/img/comunication_logo.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-      ></circle-progress>
-    </li>
-    <li>
-        <circle-progress class="adaptacion"
-        [percent]="80" 
-        [imageSrc]="'assets/img/adaptability_logo.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-      ></circle-progress>
-    </li>
-    <li>
-        <circle-progress class="cooperacion"
-        [percent]="90" 
-        [imageSrc]="'assets/img/cooperation_logo.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-      ></circle-progress>
-      
-      
-      <circle-progress class="english"
-      [percent]="90" 
-      [imageSrc]="'assets/img/language_logo.png'"
+              
+    <div class="circle-container" *ngIf="!Habilidad.hard">
+      <div class="button-container" *ngIf="isLogged"> 
+        <button class="modbtn" >Editar<i class="fa-solid fa-square-pen"></i></button>
+        <button class="modbtn" >Eliminar<i class="fa-solid fa-circle-xmark"></i></button>
+      </div>
+    <circle-progress 
+      [percent]=Habilidad.porcentaje
+      [imageSrc]="Habilidad.imgURL"
       [showImage]="true"
       [imageWidth]="50"
       [imageHeight]="50"
     ></circle-progress>
-
-    </li>
-
+    </div>
+  </li>
 </ul>
           
     </div>

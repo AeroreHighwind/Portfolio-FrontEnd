@@ -1,0 +1,28 @@
+<div class="container-sm" id="habform-container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreH">Nombre de la habilidad</label>
+                    <input type="text" class="form-control" id="nombreH" name="nombreH" [(ngModel)]="nombreH" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionEdu">Porcentaje de habilidad</label>
+                    <input type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+                </div>
+                <div class="form-group">
+                    <label for="hard">Habilidad dura?</label>
+                    <input type="checkbox" id="hard" name="hard" [(ngModel)]="hard" required [checked]="true">
+                </div>
+                <div class="form-group">
+                    <label for="hard">URL Imagen</label>
+                    <input type="text" class="form-control" id="imgURL" name="imgURL" [(ngModel)]="imgURL" required>
+                </div>
+                <button class="btn btn-primary">
+                    Agregar habilidad
+                </button>
+            </form>
+            
+        </div>
+    </div>
+</div>

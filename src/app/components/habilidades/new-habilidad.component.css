@@ -1,0 +1,20 @@
+#habform-container{
+    color: rgb(59, 45, 255);
+    max-width: 500px;
+    background: rgba(10, 10, 10, 0.4);
+    border-radius: 8px;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+button{margin-top: 20px;}
+
+.btn.btn-primary {
+    background: #021bfa !important;
+    border: 1px solid #0c007c !important;
+    color: #fff !important;
+ }
+    .btn.btn-primary:hover {
+      border: 1px solid #021bfa;
+      background: transparent;
+      color: #0c007c; 
+    }
