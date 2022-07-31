@@ -5,10 +5,11 @@
         </div>
 
         <div class="container">
+            <button class="modbtn" *ngIf="isLogged" routerLink="/updateper/{{persona.id}}">Editar <i class="fa-solid fa-square-pen"></i></button>
             <h1>{{persona.nombre}} {{persona.apellido}}</h1>
             <ul>{{persona.job}}<br>
-                {{persona.mainEdu}} <img [src]="miPortfolio.education.university.logo" class="otherlogos"><img [src]="miPortfolio.education.university.logo2" class="otherlogos"> <br>
-                {{persona.location}} <img [src]="miPortfolio.profileinfo.location.flag" class="otherlogos"><br>
+                {{persona.mainEdu}} <img [src]="persona.mainEduImg" class="otherlogos"><img [src]="persona.mainEduAltImg" class="otherlogos"> <br>
+                {{persona.location}} <img [src]="persona.locationImg" class="otherlogos"><img [src]="persona.locationAltImg" class="otherlogos"><br>
 
             </ul>
         </div>

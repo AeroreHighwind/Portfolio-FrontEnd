@@ -1,0 +1,70 @@
+<div class="container-sm" id="profileform-container">
+    <h2>No funciona, errores en el endpoint y servicio</h2>
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                <div class="form-group">
+                    <label for="nombreH">Nombre de la persona</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcionEdu">Apellido de la persona</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hard">URL Imagen</label>
+                    <input type="text" class="form-control" id="img" name="img" [(ngModel)]="persona.img">
+                </div>
+
+                <div class="form-group">
+                    <label for="hard">Acerca de la persona</label>
+                    <input type="text" class="form-control" id="about" name="about" [(ngModel)]="persona.about">
+                </div>
+
+                <div class="form-group">
+                    <label for="hard">Ocupación de la persona</label>
+                    <input type="text" class="form-control" id="job" name="job" [(ngModel)]="persona.job">
+                </div>
+
+                <div class="form-group">
+                    <label for="hard">Inst. ed. principal de la persona</label>
+                    <input type="text" class="form-control" id="mainEdu" name="mainEdu" [(ngModel)]="persona.mainEdu">
+                </div>
+
+                <div class="form-group">
+                    <label for="hard">Ubicacion de la persona</label>
+                    <input type="text" class="form-control" id="location" name="location" [(ngModel)]="persona.location">
+                </div>
+
+                <div class="form-group">
+                    <label for="hard">URL imagen pais</label>
+                    <input type="text" class="form-control" id="locationImg" name="locationImg" [(ngModel)]="persona.locationImg">
+                </div>
+
+                <div class="form-group">
+                    <label for="hard">URL imagen provincia</label>
+                    <input type="text" class="form-control" id="locationAltImg" name="locationAltImg" [(ngModel)]="persona.locationAltImg">
+                </div>
+
+                <div class="form-group">
+                    <label for="hard">URL logo inst. ed. principal</label>
+                    <input type="text" class="form-control" id="mainEduImg" name="mainEduImg" [(ngModel)]="persona.mainEduImg">
+                </div>
+
+                <div class="form-group">
+                    <label for="hard">URL logo secundario inst. ed. principal</label>
+                    <input type="text" class="form-control" id="mainEduAltImg" name="mainEduAltImg" [(ngModel)]="persona.mainEduAltImg">
+                </div>
+
+                <button class="btn btn-primary">
+                    Modificar persona
+                </button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+

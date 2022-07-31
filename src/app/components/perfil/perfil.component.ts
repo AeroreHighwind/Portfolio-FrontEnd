@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/model/persona.model';
 import { PersonaService } from 'src/app/services/persona.service';
-import { PortfolioService } from 'src/app/services/portfolio.service';
+import { TokenService } from 'src/app/services/token.service';
+
 
 @Component({
   selector: 'app-perfil',
@@ -10,17 +11,29 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class PerfilComponent implements OnInit {
 
-  miPortfolio:any;
-  persona: persona = new persona("","","","","","", "");
-  constructor(private datosPortfolio: PortfolioService,private personaService: PersonaService) { }
+
+  persona: persona = new persona("","","","","","","","","","","");
+  
+  constructor(private personaService: PersonaService, private tokenService:TokenService) { }
+
+  isLogged = false;
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      this.miPortfolio = data;
+
+    this.cargarPerfil();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else 
+    {
+      this.isLogged = false;
+    }
+
+  }
+
+  cargarPerfil(): void{
+    this.personaService.traerPersona().subscribe(data => {
+      this.persona = data;
   });
-  this.personaService.traerPersona().subscribe(data => {
-    this.persona = data;
-});
   }
 
 }
